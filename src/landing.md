@@ -5,3 +5,5 @@ permalink: /
 ---
 
 Welcome! I'm Owen Kaplan, a computer science major at Wesleyan University.
+
+![headshot](/assets/okheadshot.jpg)
