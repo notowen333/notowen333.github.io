@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+Welcome! I'm Owen Kaplan, a computer science student at Wesleyan University.
+
+
