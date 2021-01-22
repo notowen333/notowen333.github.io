@@ -18,7 +18,7 @@ Gemfile.lock
 *~
 
 # Folders
-/vendor
+.vendor
 bbin/
 bin/
 coverage
