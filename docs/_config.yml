@@ -17,7 +17,7 @@ title: Owen Kaplan
 email: okaplan@wesleyan.edu
 description: Owen Kaplan's personal website and blog.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://owenmkaplan.com
 twitter_username: OwenKaplan2
 github_username:  notowen333
 
