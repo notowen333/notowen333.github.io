@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Owen Kaplan
 email: okaplan@wesleyan.edu
-description: Owen Kaplan's personal website and blog.
+description: Owen Kaplan's website and blog.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://owenmkaplan.com
 twitter_username: OwenKaplan2
