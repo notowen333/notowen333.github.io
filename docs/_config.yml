@@ -20,7 +20,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://owenmkaplan.com
 twitter_username: OwenKaplan2
 github_username:  notowen333
-masthead: /assets/personalicon.png
+masthead: /assets/icon.png
 
 # Build settings
 markdown: kramdown
