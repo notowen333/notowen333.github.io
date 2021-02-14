@@ -86,13 +86,13 @@ I have SEO and Navbar components that were defined elsewhere easily integrated a
 
 Gatsby abstracts the transition from React to a blazingly fast site ready to be served. Running `gatsby build` runs all the gatsby and npm module code to create a public folder where the content for your site is generated, including a graphQL database, HTML, JS, and CSS. 
 
-All of this backend code stays on your machine and doesn't need to be pushed to the web server you choose. For the easiest deployment, you can drag and drop the public folder to Netifly. You can also go through a bit more work to serve your site directly from a git repository on push. 
+All of this backend code stays on your machine and doesn't need to be pushed to the web server you choose. For the easiest deployment, you can drag and drop the public folder to Netlify. You can also go through a bit more work to serve your site directly from a git repository on push. 
 
 While developing, you can see your site live by running `gatsby develop` and creating a local server. In this way, you can mess around with styling and layout things interactively without touching the site you've pushed live.
 
 ### Where to serve
 
-This [website](https://owenmkaplan.com) is deployed on GitHub Pages. Originally, I intended to serve Liam's site there, but after having trouble deploying initally, I instead opted for [Netifly](https://www.netifly.com). I'm really happy with their product. 
+This [website](https://owenmkaplan.com) is deployed on GitHub Pages. Originally, I intended to serve Liam's site there, but after having trouble deploying initally, I instead opted for [netlify](https://www.netlify.com). I'm really happy with their product. 
 
 For free, they offer 100 GB of bandwith per month, nearly unlimited builds, and easy HTTPS settup. "Not secure" banners on your site look terrible and are also a security risk, especially if your site has something like a login or form data. It's not great to generate plain text HTTP requests. 
 
@@ -100,20 +100,20 @@ For myself, deploying an unencrypted site would be embarrasing given that I'm cu
 
 ### Speed
 
-Gatsby builds [liamkaplanmusic.com](https://liamkaplanmusic.com) in about 30 seconds and Netifly can serve a new version also in about 30 seconds. This means, after the leg work has been put in, I can update something like an image or spelling or adding content in a few minutes. Gatsby also implements caching to improve load times once the site is live.
+Gatsby builds [liamkaplanmusic.com](https://liamkaplanmusic.com) in about 30 seconds and netlify can serve a new version also in about 30 seconds. This means, after the leg work has been put in, I can update something like an image or spelling or adding content in a few minutes. Gatsby also implements caching to improve load times once the site is live.
 
 
 ### Cost
 
-With gatsby being open source, it will cost $12 per year to maintain a Gatsby + Netifly site with a custom domain. In comparison to the $20/month or so that many services charge, that's a great deal.
+Since Gatsby is open source, it will cost $12 per year to maintain a Gatsby + Netlify site with a custom domain. In comparison to the $20/month or so that many services charge, that's a great deal.
 
-In today's tech landscape every company is clamoring to get a $20/month charge to your credit card. Think Adobe, Spotify, Netflix, Amazon, Apple, Playstation, Hulu, and their ever-creeping subscription costs. Think also of the profusion of the subscription model across industries. This makes Netifly's free tier especially attractive. 
+In today's tech landscape every company is clamoring to get a $20/month charge to your credit card. Think Adobe, Spotify, Netflix, Amazon, Apple, Playstation, Hulu, and their ever-creeping subscription costs. Think also of the profusion of the subscription model across industries. This makes Netlify's free tier especially attractive. 
 
-In terms of the sustainability of deploying to Netifly, I'm confident in the company's longevity given their recent $53 million in additional funding this past [March](https://news.crunchbase.com/news/investors-serve-up-53m-in-series-c-funding-to-web-dev-platform-netlify/). I'm further confident in the longevity of their free tier given that they directly compete with Microsoft's GitHub Pages.
+In terms of the sustainability of deploying to Netlify, I'm confident in the company's longevity given their recent $53 million in additional funding this past [March](https://news.crunchbase.com/news/investors-serve-up-53m-in-series-c-funding-to-web-dev-platform-netlify/). I'm further confident in the longevity of their free tier given that they directly compete with Microsoft's GitHub Pages.
 
 ### Concluding thoughts
 
-Building [liamkaplanmusic.com](https://liamkaplanmusic.com) was a great experience in improving my skills and knowledge of modern web technologies. I highly recommend using Gatsby.js and deploying to Netifly in order create beautiful and fast websites that are **free** to maintain. 
+Building [liamkaplanmusic.com](https://liamkaplanmusic.com) was a great experience in improving my skills and knowledge of modern web technologies. I highly recommend using Gatsby.js and deploying to Netlify in order create beautiful and fast websites that are **free** to maintain. 
 
 Getting my hands dirty building a website with modern web technologies left me extremely impressed by the tools developed in the last decade. Tools like React bootstrap help to make styling look consistently clean across your site with ease. When paired with the power of the Adobe suite, you can make a really polished product.
 
