@@ -27,7 +27,7 @@ Gatsby's `<Link>` tag uses SSR to create nearly instant transitions between page
 
 When Gatsby builds your site, it creates many copies of the images you've added to the site in different resolutions. In this way, you can use graphQL to to query many versions of the requested image, so one image doesn't slow down the overall page load. This results in your images briefly appearing fuzzy and then coming into focus. I ended up querying images like this:
 
-```
+```javascript
 const AlbumOne = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -52,7 +52,7 @@ Gatsby is all about building React components. [React helmet](https://www.npmjs.
 
 To maintain a navbar, footer, custom font, and SEO across the site, I used React Helmet like this:
 
-```
+```javascript
 export default ({ children }) => (
   <>
     <SEO>
