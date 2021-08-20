@@ -5,8 +5,6 @@ date:   2021-08-20 18:30:00 -0500
 categories: code
 ---
 
-# Implementing Queue In Python
-
 ## Introduction
 
 I've been practicing data-structures and algorithms in preperation for interviews. Every time I've needed to use a queue (maybe for BFS or something...), I just import deque: `from collections import deque`. 
