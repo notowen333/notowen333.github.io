@@ -15,8 +15,8 @@ Although using a standard library is the lowest cost and most robust solution, I
 
 When thinking about Queues, my mind often goes to Stacks. In python implementing your own stack is easy with lists. 
 
-With lists, we have `O(1)` appends:
-- Lists in Python are implemented as [dynamic arrays](https://en.wikipedia.org/wiki/Dynamic_array) in C, so when we append, Python has a pointer ready for the next memory address to be added in the block where the rest of the array is stored. 
+With lists, you get `O(1)` appends:
+- Lists in Python are implemented as [dynamic arrays](https://en.wikipedia.org/wiki/Dynamic_array) in C, so when you append, Python has a pointer ready for the next memory address to be added in the block where the rest of the array is stored. 
 - This makes append *amortized* `O(1)` because if the list exceeds its allocated memory, it needs to copy every element to reallocate the list.
 
 and `O(1)` pops from the end of the list:
@@ -223,11 +223,11 @@ def queueFromArr(arr):
     return Queue(initQ=linkedFromArr(arr))
 ```
 
-In simple terms, our `Queue` class just extends the Linked List class with the proper naming conventions, print methods, and initialization options. And, since it's made purely with pointers, our Queue is completely generic. 
+In simple terms, our `Queue` class just extends the Linked List class with the proper naming conventions, print methods, and initialization options. The Queue is made up of pointers to nodes that have a `val` property. Since we're writing python and the `val` property can be anything we want, than our Queue is fairly generic.
 
 Only type `None` will be a problem because this is the convention we chose to signal an empty node in the Linked List. 
 
-**So, Linked Lists were the key to making a queue!** In fact, the library I mentioned at the beginning, `deque` is implemented with a doubly linked list! 
+**So, Linked Lists are the key to making a queue!** In fact, the library I mentioned at the beginning, `deque` is implemented with a doubly linked list! ()
 
 ## Addendum Why is pop() only O(1) from the end of this list?
 
@@ -256,7 +256,7 @@ Notably, the addressing of each element is relative to its distance from the sta
 
 #### Pop() Complexity, Revisited
 
-So, if we were to pop the last element of our array, **the formula to calculate the addresses of the remaining elements, and their indexes, would be unchanged**. This is why we have O(1) pops from the end of a list.
+So, if the the last element of our array is popped, **the formula to calculate the addresses of the remaining elements, and their indexes, is unchanged**. This is why we have O(1) pops from the end of a list.
 
 If we pop the second to last element, only the address of our new last element, `'array'` would need updating. We update its index from `5` to `4`, shifting `array` up one position.
 
@@ -264,7 +264,7 @@ If we popped the third to last element, we'd do two index updates/shifts and so 
 
 **So, this re-indexing and shifting is why we have O(n) complexity to pop arbitrary elements from a list in Python.** As mentioned earlier on, we have to do this re-indexing and shifting because python lists are implemented as dynamic arrays in C.
 
-So, to make a Queue, we had to go through all of the trouble to make a Linked List.
+So now it is clear that to make a Queue, the built-in list type isn't good enough and instead we have to go through all this trouble with linked-lists.
 
 ## End
 

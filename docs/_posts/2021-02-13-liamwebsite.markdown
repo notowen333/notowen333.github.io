@@ -7,7 +7,7 @@ categories: code
 
 I recently built my talented brother a new [professional website](https://liamkaplanmusic.com). Here's what I learned.
 
-### The background
+### Background
 
 In high school, I built three or four websites using popular drag and drop web technologies like Wordpress and Squarespace. I was impressed by these tools, but was often frustrated with the level of abstraction involved. Often, I'd have a specific idea of how I wanted something to look but couldn't hack the available tools to make it happen. Of course, I was getting **a lot** of things handled for me under the hood in exchange.
 
@@ -15,7 +15,7 @@ In high school, I built three or four websites using popular drag and drop web t
 
 I wanted to present my brother as an artist with **as little friction as possible**. My guiding principles were "clean, fast, and mobile-optimized." To achieve this, it was important to have consistent design principles across the website, including spacing, coloring, and layouts. To achieve speed, I needed the right framework.
 
-### Enter Gatsby.js
+### Gatsby.js
 
 After seeing getting into software engineering twitter and stumbling upon [Dan Abramov](https://twitter.com/dan_abramov?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), one of the creators of React, I noticed that his [website](https://overreacted.io/) was built using [Gatsby.js](https://www.gatsbyjs.com/) and wanted to give the technology a try. I am very, very happy with the tool. Gatsby is a React based framework with a number of neat features that are easy to use. Server side rendering, caching, lazy image loading, and tightly integrated HTML, CSS, and JS, to name a few.
 
@@ -46,7 +46,7 @@ const AlbumOne = () => {
 
 `...GatsbyImageSharpFluid` is shorthand for a suite of image settings that Gatsby provides out of the box. I've found it to look quite good. When gatsby builds the public site folder, you can see the different versions of your images in the static folder.
 
-### An example of all the pieces coming together
+### React Components
 
 Gatsby is all about building React components. [React helmet](https://www.npmjs.com/package/react-helmet), a tool built by the NFL is a great example of this.
 
@@ -84,11 +84,11 @@ I have SEO and Navbar components that were defined elsewhere easily integrated a
 
 ### How Gatsby works
 
-Gatsby abstracts the transition from React to a blazingly fast site ready to be served. Running `gatsby build` runs all the gatsby and npm module code to create a public folder where the content for your site is generated, including a graphQL database, HTML, JS, and CSS. 
+Gatsby is a build tool that bundles up all of your code and outputs an optimized static-website. Running `gatsby build` runs all the gatsby and npm module code on your machine and writes to a public folder where the content for your site is generated, including a graphQL database, HTML, JS, and CSS.
 
-All of this backend code stays on your machine and doesn't need to be pushed to the web server you choose. For the easiest deployment, you can drag and drop the public folder to Netlify. You can also go through a bit more work to serve your site directly from a git repository on push. 
+All of this backend code stays on your machine and doesn't need to be maintained on the web server you choose. For the easiest deployment, you can drag and drop the public folder to Netlify. You can also go through a bit more work to serve your site directly from a git repository on push. 
 
-While developing, you can see your site live by running `gatsby develop` and creating a local server. In this way, you can mess around with styling and layout things interactively without touching the site you've pushed live.
+While developing, you can see your site on localhost by running `gatsby develop`. In this way, you can mess around with styling, layout, and whatever else interactively.
 
 ### Where to serve
 
@@ -115,6 +115,6 @@ In terms of the sustainability of deploying to Netlify, I'm confident in the com
 
 Building [liamkaplanmusic.com](https://liamkaplanmusic.com) was a great experience in improving my skills and knowledge of modern web technologies. I highly recommend using Gatsby.js and deploying to Netlify in order create beautiful and fast websites that are **free** to maintain. 
 
-Getting my hands dirty building a website with modern web technologies left me extremely impressed by the tools developed in the last decade. Tools like React bootstrap help to make styling look consistently clean across your site with ease. When paired with the power of the Adobe suite, you can make a really polished product.
+Getting my hands dirty building a website with modern web technologies left me extremely impressed by the tools developed in the last decade. Tools like React bootstrap help to make styling look consistently clean across your site with ease. When paired with the depth of the Adobe suite, you can make a really polished product.
 
-I only just entered the space, but it seems to me that it's never been easier to build beautiful and fast digital technology.
+I only just entered the space, but it seems to me that it's never been easier to build beautiful and fast websites.

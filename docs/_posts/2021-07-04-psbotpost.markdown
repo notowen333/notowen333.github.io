@@ -16,7 +16,7 @@ I've wanted to get the new playstation console since it came out 8 months ago. I
 
 The core functionality of the app uses Google's [puppeteer library](https://www.npmjs.com/package/puppeteer). With puppeteer, you can operate a [headless browser](https://en.wikipedia.org/wiki/Headless_browser#:~:text=A%20headless%20browser%20is%20a,interface%20or%20using%20network%20communication.) to programatically interact with the web.
 
-The SMS notification functionality uses Twilio's SMS API through [Twilio's Node.js wrapper](https://www.npmjs.com/package/twilio). You'll need to make a Twilio account and purchase a fresh phone number to send yourself texts. This will cost you $1, but this is less than the $15 in free credit you'll get with a new account.
+The SMS notification functionality uses Twilio's SMS API through [Twilio's Node.js wrapper](https://www.npmjs.com/package/twilio). You'll need to make a Twilio account and purchase a fresh phone number to send yourself texts.
 
 ### My Idea
 
@@ -36,7 +36,7 @@ Then, whenever you add a new library to your project, run `npm install some_libr
 
 #### Imports vs Require
 
-I've been writing javascript for my work, so I wanted to use the `import { foo, bar } from './file.js` syntax. But for a Node.js app, you want to use `module.exports/require` syntax. So, if you write a function in another file called `foo`, you would say `module.exports = {foo}` in this file. In the file where you use the function, we first say `const fooRef = require('/path/to/file')` and then `fooRef.foo(fooParams)` gives us the function we wrote.
+I've been writing javascript for my work, so I wanted to use the `import { foo, bar } from './file.js` syntax. But for a Node.js app, you want to use `module.exports/require` syntax. So, if you write a function in another file called `foo`, you would say `module.exports = {foo}` in this file. In the file where you use the function, we first say `const fooRef = require('/path/to/file')` and then `fooRef.foo(fooParams)` gives us the function we wrote. Alternatively, you can configure ES6-style-imports in the `package.JSON` file.
 
 #### Run Script
 
@@ -111,4 +111,4 @@ Then to load the `.env` information into my app, I just included `require('doten
 
 You can check out the source code [here](https://github.com/notowen333/ps5check).
 
-Stay tuned for part 2, where I will try to host my app on Google's cloud and run it every couple of minutes. Since the app is taking about 30 seconds to finish, I'm hoping I can stay in the free tier. We will see!
+Stay tuned for part 2 (maybe never coming whoops), where I will try to host my app on Google's cloud and run it every couple of minutes. Since the app is taking about 30 seconds to finish, I'm hoping I can stay in the free tier. We will see!
